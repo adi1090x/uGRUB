@@ -1,6 +1,15 @@
 # Multiboot USB Drive With GRUB2 Bootloader
 
-The ultimate step by step guide to install and configure `grub2` bootloader on USB Flash Drive to boot multiple ISO files.
+<p align="left">
+  <a href="https://github.com/adi1090x/uGRUB#prepare-the-usb-drive" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Preparation-red?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/uGRUB#install-grub2-on-the-usb-flash-drive" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Installation-green?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/uGRUB#configuration" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Configuration-blue?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/uGRUB#menu-entries" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Menu%20Entries-purple?style=for-the-badge"></a>
+  <a href="https://github.com/adi1090x/uGRUB#changing-themes" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/Theming-orange?style=for-the-badge"></a>
+</p>
+
+
+The ultimate guide to install and configure `grub2` bootloader on USB Flash Drive to boot multiple ISO files.
 
 ![img](previews/stylish.png)
 
@@ -296,7 +305,7 @@ total 2154482
 -r--r--r-- 1 root root   11662080 Jul 31 22:13 vmlinuz
 ```
 
-Here, we can see that the kernel is `vmlinuz` and initrd is `initrd`, both in **`casper`** directory. You can look for the kernel arguments the same way, by printing the content of config files in `boot` & `isolinux` directories. For example -
+Here, we can see that the kernel is `vmlinuz` and initrd is `initrd`, both in **`casper`** directory. You can look for the kernel arguments the same way, by printing the content of config files in `boot` & `isolinux` directories.
 ```
 $ cat /mnt/boot/grub/loopback.cfg 
 menuentry "Ubuntu" {
