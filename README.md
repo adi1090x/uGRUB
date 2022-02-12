@@ -13,7 +13,7 @@ The ultimate guide to install and configure `grub2` bootloader on USB Flash Driv
 
 ![img](previews/stylish.png)
 
-It's a headache to format your USB again and again just to try out a new Linux distribution or when you want to install another distribution, **Distohoppers** can feel the pain. This guide may help you with that situation. In this guide, I'm trying to explain how you can install and configure grub2 bootloader on an USB thumb drive and then boot multiple Linux ISOs with it. So, follow this guide if you want to create one. I'll also tell you how you can boot the Linux ISO from an installed Linux OS later in this guide.
+It's a headache to format your USB again and again just to try out a new Linux distribution or when you want to install another distribution, **DistroHoppers** can feel the pain. This guide may help you with that situation. In this guide, I'm trying to explain how you can install and configure grub2 bootloader on an USB thumb drive and then boot multiple Linux ISOs with it. So, follow this guide if you want to create one. I'll also tell you how you can boot the Linux ISO from an installed Linux OS later in this guide.
 
 ## Prepare the USB drive
 
@@ -166,7 +166,7 @@ Installing for x86_64-efi platform.
 Installation finished. No error reported.
 ```
 
-* You can varify the installation by listing the contents of `/mnt`
+* You can verify the installation by listing the contents of `/mnt`
 ```
 # ls -l /mnt/boot/grub 
 total 80
@@ -271,7 +271,7 @@ menuentry "Ubuntu 20.04 Live ISO" --class ubuntu --class linux {
 
 **`How to find the path of the kernel, initrd and the kernel arguments needed to boot the ISO properly?`**
 
-You can mount the ISO file and look at its contents to get this information. for example, i'm going to mount the Ubuntu ISO and look for kernel, initrd and kernel arguments :
+You can mount the ISO file and look at its contents to get this information. for example, I'm going to mount the Ubuntu ISO and look for kernel, initrd and kernel arguments :
 
 ```
 $ sudo mount -o loop ubuntu-20.04.1-desktop-amd64.iso /mnt
@@ -357,7 +357,7 @@ For example, to use **Tela** theme, replace every instance of `Stylish` with the
 
 ### Boot ISO from installed Linux OS
 
-Well, Now you know how to add a menu entry to boot an ISO file. You can boot the ISO file the same way from an installed Linux OS. It's helpful when you just want to try out a distro, or when you don't have an USB arround or when you want to install the ISO on a USB drive. All you need to do is, Add the menu entry to `/etc/grub.d/40_custom` file and update the grub config file. For Example :
+Well, Now you know how to add a menu entry to boot an ISO file. You can boot the ISO file the same way from an installed Linux OS. It's helpful when you just want to try out a distro, or when you don't have an USB around or when you want to install the ISO on a USB drive. All you need to do is, Add the menu entry to `/etc/grub.d/40_custom` file and update the grub config file. For Example :
 
 ```
 $ sudo vim /etc/grub.d/40_custom
