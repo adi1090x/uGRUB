@@ -389,4 +389,5 @@ $ sudo grub-mkconfig -o /boot/grub/grub.cfg
 - If you manage to boot your favorite Linux ISO or updated a menu entry, You can create a Pull Request to add that menu entry here to help other people.
 - Open an issue if you want a menu entry for a specific OS, I may or may not do that but hopefully someone else does.
 - Not every menu entry is tested, but you got the idea how to make it work for you.
+- Also there is a small bug in NixOS multiboot for live iso files. This can be easily fixed by following [this wiki](https://nixos.wiki/wiki/NixOS_Installation_Guide/multibootusb).
 - That's all, Have Fun.
