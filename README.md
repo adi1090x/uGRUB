@@ -13,7 +13,7 @@ The ultimate guide to install and configure `grub2` bootloader on USB Flash Driv
 
 ![img](previews/stylish.png)
 
-It's a headache to format your USB again and again just to try out a new Linux distribution or when you want to install another distribution, **Distohoppers** can feel the pain. This guide may help you with that situation. In this guide, I'm trying to explain how you can install and configure grub2 bootloader on an USB thumb drive and then boot multiple Linux ISOs with it. So, follow this guide if you want to create one. I'll also tell you how you can boot the Linux ISO from an installed Linux OS later in this guide.
+It's a headache to format your USB again and again just to try out a new Linux distribution or when you want to install another distribution, **Distrohoppers** can feel the pain. This guide may help you with that situation. In this guide, I'm trying to explain how you can install and configure grub2 bootloader on an USB thumb drive and then boot multiple Linux ISOs with it. So, follow this guide if you want to create one. I'll also tell you how you can boot the Linux ISO from an installed Linux OS later in this guide.
 
 ## Prepare the USB drive
 
